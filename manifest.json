@@ -1,5 +1,5 @@
 {
- "version": "2026-10-17T16:00:46.460Z",
+ "version": "2026-10-17T16:03:12.228Z",
  "forge": null,
  "clean": [
   "mods"
@@ -34,6 +34,12 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
    "sha1": "43b3e0766a9e7a30651cc01756476657b865b7a2",
    "size": 402345
+  },
+  {
+   "path": "mods/embeddium-0.3.25+mc1.20.1.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/embeddium-0.3.25+mc1.20.1.jar",
+   "sha1": "d92ad8907fcbe16073d89fd6e4e284b6b228dcd5",
+   "size": 1310789
   },
   {
    "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
