@@ -1,5 +1,5 @@
 {
- "version": "2026-10-17T16:06:06.653Z",
+ "version": "2026-10-17T16:10:14.543Z",
  "forge": null,
  "clean": [
   "mods"
@@ -70,12 +70,6 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/modernfix-forge-5.27.88+mc1.20.1.jar",
    "sha1": "c550424a1a5435dfc838672e1df61289717cb2cc",
    "size": 1009661
-  },
-  {
-   "path": "mods/oculus-mc1.20.1-1.6.15.jar",
-   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/oculus-mc1.20.1-1.6.15.jar",
-   "sha1": "6575bf1885a9910e00b244b63ba059090e48be96",
-   "size": 2806574
   },
   {
    "path": "mods/pointblank-forge-1.20.1-2.2.0.jar",
