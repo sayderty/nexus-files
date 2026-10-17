@@ -1,5 +1,5 @@
 {
- "version": "2026-10-17T14:30:51.453Z",
+ "version": "2026-10-17T15:58:54.341Z",
  "forge": null,
  "clean": [
   "mods"
@@ -76,6 +76,12 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/scprp_access-1.14.2.jar",
    "sha1": "99448fbab17f58b9e3eade4432bad95bd6a3de1c",
    "size": 3537052
+  },
+  {
+   "path": "mods/skinlayers3d-forge-1.11.3-mc1.20.1.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/skinlayers3d-forge-1.11.3-mc1.20.1.jar",
+   "sha1": "066d8ce36155f0018e30e905240fc12e422972e9",
+   "size": 2093560
   },
   {
    "path": "mods/worldedit-mod-7.2.15.jar",
