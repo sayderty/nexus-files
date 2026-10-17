@@ -1,5 +1,5 @@
 {
- "version": "2026-10-17T14:29:57.432Z",
+ "version": "2026-10-17T14:30:51.453Z",
  "forge": null,
  "clean": [
   "mods"
@@ -16,6 +16,18 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/FramedBlocks-9.4.3-1.20.1.jar",
    "sha1": "740c0feaab75455f32df7e137389f77c83fb490c",
    "size": 4251314
+  },
+  {
+   "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+   "sha1": "9eacd407b7dea636d375dc47335d92f616484ea2",
+   "size": 532063
+  },
+  {
+   "path": "mods/LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
+   "sha1": "858d2de167f660c491632ed9727292b418ca804a",
+   "size": 2623590
   },
   {
    "path": "mods/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
@@ -40,6 +52,36 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/ferritecore-6.0.1-forge.jar",
    "sha1": "417fb6ce8f52abf40bd9d0390371790f9576f8ba",
    "size": 123034
+  },
+  {
+   "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/geckolib-forge-1.20.1-4.8.4.jar",
+   "sha1": "50e1407869ef0e909e3bdda9328b8bd7db03fdc0",
+   "size": 1038209
+  },
+  {
+   "path": "mods/modernfix-forge-5.27.88+mc1.20.1.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/modernfix-forge-5.27.88+mc1.20.1.jar",
+   "sha1": "c550424a1a5435dfc838672e1df61289717cb2cc",
+   "size": 1009661
+  },
+  {
+   "path": "mods/pointblank-forge-1.20.1-2.2.0.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/pointblank-forge-1.20.1-2.2.0.jar",
+   "sha1": "c1fc31e09fff2f3dcce969ac670556a5a2737e98",
+   "size": 21427894
+  },
+  {
+   "path": "mods/scprp_access-1.14.2.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/scprp_access-1.14.2.jar",
+   "sha1": "99448fbab17f58b9e3eade4432bad95bd6a3de1c",
+   "size": 3537052
+  },
+  {
+   "path": "mods/worldedit-mod-7.2.15.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/worldedit-mod-7.2.15.jar",
+   "sha1": "9c52765ca56f917ef8cbafc20e9a4f45c346508f",
+   "size": 5825402
   }
  ]
 }
