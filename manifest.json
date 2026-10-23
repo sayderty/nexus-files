@@ -1,5 +1,5 @@
 {
- "version": "2026-10-17T16:13:02.941Z",
+ "version": "2026-10-23T18:05:25.551Z",
  "forge": null,
  "clean": [
   "mods"
@@ -82,12 +82,6 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/pointblank-forge-1.20.1-2.2.0.jar",
    "sha1": "c1fc31e09fff2f3dcce969ac670556a5a2737e98",
    "size": 21427894
-  },
-  {
-   "path": "mods/scprp_access-1.14.2.jar",
-   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/scprp_access-1.14.2.jar",
-   "sha1": "99448fbab17f58b9e3eade4432bad95bd6a3de1c",
-   "size": 3537052
   },
   {
    "path": "mods/skinlayers3d-forge-1.11.3-mc1.20.1.jar",
