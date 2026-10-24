@@ -1,5 +1,5 @@
 {
- "version": "2026-10-24T16:06:33.677Z",
+ "version": "2026-10-24T16:06:45.483Z",
  "forge": null,
  "news": [],
  "clean": [
@@ -66,6 +66,12 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/modernfix-forge-5.27.88+mc1.20.1.jar",
    "sha1": "c550424a1a5435dfc838672e1df61289717cb2cc",
    "size": 1009661
+  },
+  {
+   "path": "mods/nexus_scprp_site17-1.42.1.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/nexus_scprp_site17-1.42.1.jar",
+   "sha1": "7c8048dd4a36b5299a5673ca68d41166c2d50c21",
+   "size": 5339813
   },
   {
    "path": "mods/oculus-mc1.20.1-1.8.0.jar",
