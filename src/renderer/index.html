@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://mc-heads.net data:; style-src 'self' 'unsafe-inline'">
+<title>Nexus Launcher</title><link rel="stylesheet" href="style.css"></head>
+<body class="boot">
+<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#59b0ff"/><stop offset="1" stop-color="#b04dff"/></linearGradient>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 9.5V20h5v-6h4v6h5V9.5"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2.5l9 5v9l-9 5-9-5v-9zM3 7.5l9 5 9-5M12 12.5v9"/></symbol>
+<symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></symbol>
+<symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6h6l2 2h10v11H3z"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 13h6M9 17h6"/></symbol>
+<symbol id="i-cam" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM5 15V4h11"/></symbol>
+<symbol id="i-out" viewBox="0 0 24 24"><path d="M10 4H4v16h6M15 8l4 4-4 4M19 12H9"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2 6M20 4v7h-7"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5l12 7.5-12 7.5z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 005 5L21 13l-8 8-3.5-3.5 8-8zM3 21l4-4"/></symbol>
+</defs></svg>
+
+<div class="bg"></div><i class="aurora a1"></i><i class="aurora a2"></i>
+<div class="drag"></div>
+<div class="winctl"><button data-w="min" aria-label="Свернуть">&#8211;</button><button data-w="full" id="wFull" aria-label="Полный экран (F11)" title="Полный экран (F11)">&#9974;</button><button data-w="max" id="wMax" aria-label="Развернуть" title="Развернуть / восстановить">&#9633;</button><button data-w="close" class="x" aria-label="Закрыть" title="Закрыть">&#10005;</button></div>
+
+<section id="splash"><img src="logo.png" alt=""><p>Проверяем сессию…</p></section>
+
+<!-- ВХОД -->
+<section id="auth">
+  <div class="authbox">
+    <img class="authlogo" src="logo.png" alt="">
+    <h1 class="wordmark">NEXUS</h1><p class="wordsub">SCP RP</p>
+    <div class="card authcard">
+      <!-- выбор способа входа -->
+      <div class="pane on" id="paneHome">
+        <h2>Вход в лаунчер</h2><p class="muted">Выберите, как вы входите в Minecraft</p>
+        <button class="tile" id="tMs"><span class="tico"><svg viewBox="0 0 24 24"><path d="M2 2h9.5v9.5H2z" fill="#f25022" stroke="none"/><path d="M12.5 2H22v9.5h-9.5z" fill="#7fba00" stroke="none"/><path d="M2 12.5h9.5V22H2z" fill="#00a4ef" stroke="none"/><path d="M12.5 12.5H22V22h-9.5z" fill="#ffb900" stroke="none"/></svg></span>
+          <span class="ttxt"><b>Microsoft</b><small>Лицензионный аккаунт Minecraft Java</small></span><svg class="tarrow"><use href="#i-arrow"/></svg></button>
+        <button class="tile" id="tEly"><span class="tico ely"><b>E</b></span>
+          <span class="ttxt"><b>Ely.by</b><small>Ник или email, поддерживается двухфакторная защита</small></span><svg class="tarrow"><use href="#i-arrow"/></svg></button>
+        <button class="tile" id="tOff"><span class="tico off"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>
+          <span class="ttxt"><b>Офлайн</b><small>Локальный аккаунт: регистрация и вход по нику и паролю</small></span><svg class="tarrow"><use href="#i-arrow"/></svg></button>
+        <p class="authmsg" id="msMsg"></p>
+      </div>
+
+      <!-- Ely.by -->
+      <div class="pane" id="paneEly">
+        <button class="back" data-back><svg><use href="#i-back"/></svg>Назад</button>
+        <h2>Вход через Ely.by</h2><p class="muted">Пароль не сохраняется — лаунчер хранит только токен</p>
+        <div class="field"><input id="elyUser" placeholder=" " autocomplete="username" spellcheck="false"><label for="elyUser">Ник или email</label></div>
+        <div class="field"><input id="elyPass" type="password" placeholder=" " autocomplete="current-password"><label for="elyPass">Пароль</label>
+          <button class="eye" type="button" data-eye="elyPass" aria-label="Показать пароль"><svg><use href="#i-eye"/></svg></button></div>
+        <div class="field" id="fCode" hidden><input id="elyCode" placeholder=" " inputmode="numeric" autocomplete="one-time-code" maxlength="8"><label for="elyCode">Код из приложения-аутентификатора</label></div>
+        <p class="authmsg" id="elyMsg"></p>
+        <button class="play wide" id="elyGo"><span>Войти</span></button>
+        <div class="alinks"><button class="link" data-open="https://account.ely.by/register">Создать аккаунт на ely.by</button><button class="link" data-open="https://account.ely.by/forgot-password">Забыли пароль?</button></div>
+      </div>
+
+      <!-- Офлайн: вход / регистрация -->
+      <div class="pane" id="paneOff">
+        <button class="back" data-back><svg><use href="#i-back"/></svg>Назад</button>
+        <h2>Офлайн-аккаунт</h2><p class="muted">Хранится только на этом компьютере. Подходит для серверов без проверки лицензии.</p>
+        <div class="seg"><button data-m="login" class="on">Вход</button><button data-m="reg">Регистрация</button></div>
+        <div class="chips" id="chips" hidden></div>
+        <div class="field"><input id="offUser" placeholder=" " autocomplete="username" spellcheck="false" maxlength="16"><label for="offUser">Ник (латиница, цифры, _)</label></div>
+        <div class="field"><input id="offPass" type="password" placeholder=" " autocomplete="current-password"><label for="offPass">Пароль</label>
+          <button class="eye" type="button" data-eye="offPass" aria-label="Показать пароль"><svg><use href="#i-eye"/></svg></button></div>
+        <div class="field" id="fPass2" hidden><input id="offPass2" type="password" placeholder=" " autocomplete="new-password"><label for="offPass2">Повторите пароль</label></div>
+        <p class="authmsg" id="offMsg"></p>
+        <button class="play wide" id="offGo"><span>Войти</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРИЛОЖЕНИЕ -->
+<div id="app">
+  <nav class="side">
+    <img class="slogo" src="logo.png" alt="">
+    <div class="nav">
+      <button data-page="home" class="on"><svg><use href="#i-home"/></svg><span>Главная</span></button>
+      <button data-page="mods"><svg><use href="#i-box"/></svg><span>Сборка</span></button>
+      <button data-page="diag"><svg><use href="#i-pulse"/></svg><span>Диагностика</span></button>
+      <button data-page="set"><svg><use href="#i-sliders"/></svg><span>Настройки</span></button>
+    </div>
+    <button class="me" id="me" title="Аккаунт"><img id="meImg" alt=""><span id="meName"></span></button>
+  </nav>
+
+  <main>
+    <!-- ГЛАВНАЯ -->
+    <section class="page on" id="p-home">
+      <div class="hero">
+        <p class="hello" id="hello"></p>
+        <h1 class="title">NEXUS</h1><p class="sub">SCP RP</p>
+        <p class="buildline" id="buildLine">Проверяем сборку…</p>
+        <div class="actions">
+          <button id="play" class="play"><svg><use href="#i-play"/></svg><span id="playTxt">Играть</span></button>
+          <button class="ghost" id="repairBtn"><svg><use href="#i-refresh"/></svg>Проверить файлы</button>
+        </div>
+        <div class="bar"><i id="fill"></i></div><div class="status" id="status">Готов к запуску</div>
+      </div>
+      <div class="rail">
+        <article class="card srv reveal" style="--i:1">
+          <div class="row"><h3>Сервер</h3><span class="pill" id="pill"><i></i><em id="pillTxt">Проверка</em></span></div>
+          <div class="big"><b id="online">–</b><span id="max"></span><small>игроков</small></div>
+          <div class="meter"><i id="meter"></i></div>
+          <div class="row2"><div class="sig" id="sig"><i></i><i></i><i></i><i></i></div><span id="ping">пинг –</span><span class="chip" id="ver"></span></div>
+          <div class="heads" id="heads"></div>
+          <button class="ip" id="ip"><span id="ipTxt"></span><u id="copied"><svg><use href="#i-copy"/></svg>скопировать</u></button>
+        </article>
+        <article class="card reveal" style="--i:2">
+          <h3>Сборка</h3>
+          <div class="stats"><div><b id="stMods">–</b><small>модов</small></div><div><b id="stSize">–</b><small>загрузка</small></div><div><b id="stDate">–</b><small>обновлена</small></div></div>
+        </article>
+        <article class="card news reveal" style="--i:3"><h3>Новости</h3><div id="news"><p class="muted">Здесь появятся новости проекта.</p></div></article>
+      </div>
+    </section>
+
+    <!-- СБОРКА -->
+    <section class="page" id="p-mods">
+      <header class="ph"><div><h2>Сборка</h2><p class="muted" id="modsSub">Загружаем список…</p></div>
+        <div class="phr"><div class="search"><svg><use href="#i-search"/></svg><input id="modQ" placeholder="Поиск мода"></div>
+        <button class="ghost" id="modsRescan" title="Сверить файлы заново"><svg><use href="#i-refresh"/></svg>Сверить</button>
+        <button class="play sm" id="modsFix"><svg><use href="#i-wrench"/></svg>Обновить сборку</button></div></header>
+
+      <div class="upbar" id="upBar" hidden><i id="upFill"></i><span id="upTxt"></span></div>
+
+      <div class="card changes" id="changes" hidden>
+        <div class="row"><h3>Последнее обновление</h3><button class="link" id="chHide">скрыть</button></div>
+        <div id="chBody"></div>
+      </div>
+
+      <h4 class="grouphead" id="headMods" hidden>Моды</h4>
+      <div class="modgrid" id="modGrid"></div>
+      <h4 class="grouphead" id="headPacks" hidden>Дополнения Point Blank</h4>
+      <div class="modgrid" id="packGrid"></div>
+    </section>
+
+    <!-- ДИАГНОСТИКА -->
+    <section class="page" id="p-diag">
+      <div class="dside card reveal" style="--i:0">
+        <div class="ring"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52"/><circle id="arc" cx="60" cy="60" r="52"/></svg><b id="score">0</b></div>
+        <h2>Диагностика</h2><p class="muted" id="verdict">Нажмите «Проверить»</p>
+        <button class="play sm wide" id="fix" hidden><svg><use href="#i-wrench"/></svg>Исправить автоматически</button>
+        <button class="ghost wide" id="again"><svg><use href="#i-refresh"/></svg>Проверить</button>
+        <button class="ghost wide" id="rep"><svg><use href="#i-copy"/></svg>Скопировать отчёт</button>
+        <button class="ghost wide" id="logs"><svg><use href="#i-doc"/></svg>Открыть логи</button>
+      </div>
+      <ul id="dlist"></ul>
+    </section>
+
+    <!-- НАСТРОЙКИ -->
+    <section class="page" id="p-set">
+      <header class="ph"><div><h2>Настройки</h2><p class="muted">Изменения сохраняются сразу</p></div></header>
+      <div class="setgrid">
+        <article class="card reveal" style="--i:0"><h3>Память</h3>
+          <div class="ramv"><b id="ramVal">4</b><span>ГБ</span></div>
+          <input type="range" id="ram" min="2" step="1"><div class="presets" id="presets"></div>
+          <p class="muted" id="ramHint"></p></article>
+        <article class="card reveal" style="--i:1"><h3>Запуск</h3>
+          <label class="sw"><span><b>Заходить на сервер сразу</b><small>Выключено — откроется обычное меню Minecraft</small></span><input type="checkbox" id="swAuto"><i></i></label>
+          <label class="sw"><span><b>Сворачивать лаунчер</b><small>Когда игра запущена</small></span><input type="checkbox" id="swHide"><i></i></label>
+          <label class="sw"><span><b>Полный экран</b><small>Запускать игру на весь экран</small></span><input type="checkbox" id="swFull"><i></i></label>
+          <label class="sw" id="rowDs"><span><b>Статус в Discord</b><small>Показывать, что вы играете в Nexus</small></span><input type="checkbox" id="swDs"><i></i></label></article>
+        <article class="card reveal" style="--i:2"><h3>Java</h3>
+          <p class="muted" id="javaInfo">…</p>
+          <div class="field flat"><input id="jvm" placeholder=" " spellcheck="false"><label for="jvm">Дополнительные аргументы JVM</label></div></article>
+        <article class="card reveal" style="--i:3"><h3>Файлы</h3>
+          <div class="btnrow"><button class="ghost" data-open="game"><svg><use href="#i-folder"/></svg>Папка игры</button>
+          <button class="ghost" data-open="mods"><svg><use href="#i-box"/></svg>Моды</button>
+          <button class="ghost" data-open="packs"><svg><use href="#i-box"/></svg>Дополнения Point Blank</button>
+          <button class="ghost" data-open="shots"><svg><use href="#i-cam"/></svg>Скриншоты</button>
+          <button class="ghost" data-open="logs"><svg><use href="#i-doc"/></svg>Логи</button></div>
+          <p class="muted">Свои моды в папку класть не нужно: при запуске лишнее удаляется, чтобы сборка совпадала с серверной.</p></article>
+        <article class="card acc reveal" style="--i:4"><h3>Аккаунт</h3>
+          <div class="accrow"><img id="accImg" alt=""><div><b id="accName"></b><span class="badge" id="accProv"></span></div></div>
+          <button class="ghost" id="logout"><svg><use href="#i-out"/></svg>Сменить аккаунт</button>
+          <p class="muted ver" id="verTxt"></p></article>
+      </div>
+    </section>
+  </main>
+</div>
+<div id="toasts"></div>
+<script src="app.js"></script></body></html>

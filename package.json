@@ -1,0 +1,51 @@
+{
+  "name": "nexus-launcher",
+  "version": "1.1.0",
+  "description": "Nexus SCP-RP Launcher",
+  "main": "src/main.js",
+  "author": "Nexus SCP-RP",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win nsis portable --publish never",
+    "manifest": "node make-manifest.js"
+  },
+  "dependencies": {
+    "extract-zip": "^2.0.1",
+    "minecraft-launcher-core": "^3.18.2",
+    "minecraft-server-util": "^5.4.4",
+    "msmc": "^5.0.5"
+  },
+  "devDependencies": {
+    "electron": "^31.7.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "space.nexus.launcher",
+    "productName": "Nexus Launcher",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "src/assets/icon.ico"
+    },
+    "portable": {
+      "artifactName": "NexusLauncher.exe"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "Nexus Launcher",
+      "artifactName": "NexusLauncher-Setup.exe",
+      "installerIcon": "src/assets/icon.ico",
+      "uninstallerIcon": "src/assets/icon.ico"
+    }
+  }
+}

@@ -1,8 +1,10 @@
 {
- "version": "2026-10-24T11:03:12.969Z",
+ "version": "2026-10-24T13:31:39.339Z",
  "forge": null,
+ "news": [],
  "clean": [
-  "mods"
+  "mods",
+  "pointblank"
  ],
  "files": [
   {
@@ -12,34 +14,10 @@
    "size": 1144290
   },
   {
-   "path": "mods/FramedBlocks-9.4.3-1.20.1.jar",
-   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/FramedBlocks-9.4.3-1.20.1.jar",
-   "sha1": "740c0feaab75455f32df7e137389f77c83fb490c",
-   "size": 4251314
-  },
-  {
-   "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
-   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
-   "sha1": "9eacd407b7dea636d375dc47335d92f616484ea2",
-   "size": 532063
-  },
-  {
-   "path": "mods/LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
-   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
-   "sha1": "858d2de167f660c491632ed9727292b418ca804a",
-   "size": 2623590
-  },
-  {
    "path": "mods/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
    "sha1": "43b3e0766a9e7a30651cc01756476657b865b7a2",
    "size": 402345
-  },
-  {
-   "path": "mods/embeddium-0.3.25+mc1.20.1.jar",
-   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/embeddium-0.3.25+mc1.20.1.jar",
-   "sha1": "d92ad8907fcbe16073d89fd6e4e284b6b228dcd5",
-   "size": 1310789
   },
   {
    "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
@@ -60,10 +38,28 @@
    "size": 123034
   },
   {
+   "path": "mods/FramedBlocks-9.4.3-1.20.1.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/FramedBlocks-9.4.3-1.20.1.jar",
+   "sha1": "740c0feaab75455f32df7e137389f77c83fb490c",
+   "size": 4251314
+  },
+  {
    "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/geckolib-forge-1.20.1-4.8.4.jar",
    "sha1": "50e1407869ef0e909e3bdda9328b8bd7db03fdc0",
    "size": 1038209
+  },
+  {
+   "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+   "sha1": "9eacd407b7dea636d375dc47335d92f616484ea2",
+   "size": 532063
+  },
+  {
+   "path": "mods/LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
+   "sha1": "858d2de167f660c491632ed9727292b418ca804a",
+   "size": 2623590
   },
   {
    "path": "mods/modernfix-forge-5.27.88+mc1.20.1.jar",
@@ -94,6 +90,12 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/skinlayers3d-forge-1.11.3-mc1.20.1.jar",
    "sha1": "066d8ce36155f0018e30e905240fc12e422972e9",
    "size": 2093560
+  },
+  {
+   "path": "pointblank/counterstrike_0_11_hotfix.zip",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/pointblank/counterstrike_0_11_hotfix.zip",
+   "sha1": "0f38f9058ae205e113d4f1ae4cfc6757cf2c7cab",
+   "size": 13470727
   }
  ]
 }
