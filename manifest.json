@@ -1,5 +1,5 @@
 {
- "version": "2026-10-26T18:45:27.796Z",
+ "version": "2026-10-27T08:18:49.806Z",
  "forge": null,
  "news": [],
  "clean": [
@@ -14,6 +14,12 @@
    "size": 1144290
   },
   {
+   "path": "mods/CustomNPCs-1.20.1-GBPort-Unofficial-1.20.1.20260711.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/CustomNPCs-1.20.1-GBPort-Unofficial-1.20.1.20260711.jar",
+   "sha1": "c1a973b55f6f67e9fdeb197195e490ba92146381",
+   "size": 10873769
+  },
+  {
    "path": "mods/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
    "sha1": "43b3e0766a9e7a30651cc01756476657b865b7a2",
@@ -24,6 +30,12 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/embeddium-0.3.31+mc1.20.1.jar",
    "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
    "size": 1320675
+  },
+  {
+   "path": "mods/emotecraft-for-MC1.20.1-2.2.7-b.build.50-forge.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/emotecraft-for-MC1.20.1-2.2.7-b.build.50-forge.jar",
+   "sha1": "fcff067375cfe917cbf235218f49ceb58e598a5c",
+   "size": 680255
   },
   {
    "path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar",
@@ -78,6 +90,12 @@
    "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/oculus-mc1.20.1-1.8.0.jar",
    "sha1": "984f774e71790deaec674c7587bd24e0711871b2",
    "size": 2851119
+  },
+  {
+   "path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+   "sha1": "16808f94a41d45d8e986b4e4ea6b02ba57fa058a",
+   "size": 181437
   },
   {
    "path": "mods/pointblank-forge-1.20.1-2.2.0.jar",
