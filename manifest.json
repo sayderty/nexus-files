@@ -1,5 +1,5 @@
 {
- "version": "2026-10-30T17:29:35.022Z",
+ "version": "2026-10-31T13:26:47.911Z",
  "forge": null,
  "news": [],
  "clean": [
@@ -80,10 +80,10 @@
    "size": 1009661
   },
   {
-   "path": "mods/nexus_scprp_site17-1.59.0.jar",
-   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/nexus_scprp_site17-1.59.0.jar",
-   "sha1": "371fefb27d2fb86683578d3510a61966dcd0f2a2",
-   "size": 7106631
+   "path": "mods/nexus_scprp_site17-1.62.0.jar",
+   "url": "https://raw.githubusercontent.com/sayderty/nexus-files/main/files/mods/nexus_scprp_site17-1.62.0.jar",
+   "sha1": "e8dd98c91e0216161df693ad55dd1142165d8ed0",
+   "size": 7136318
   },
   {
    "path": "mods/oculus-mc1.20.1-1.8.0.jar",
